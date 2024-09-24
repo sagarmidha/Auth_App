@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            padding-right: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: aqua;color: white; padding: 20px;">
+        <h1 style="text-align: center;">Auth app</h1>
+        <a href="register.html">register</a>
+        <a href="login.html">login</a>
+        <a href="contact.html">contact us</a>  
+    </header>
+    <section>
+        <h1>Registration Form</h1>
+        <form onsubmit="registerUser(event)">
+            <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+            </div>
+            <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            </div>
+            <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+            </div>
+            <div>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required><br>
+            </div>
+            <div>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required pattern="[0-9]{10}"><br>
+            </div>
+            <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required><br>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <div id="message"></div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
